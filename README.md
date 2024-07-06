@@ -1,6 +1,6 @@
 # Unofficial Emacs Gren Lang Package!
 
-Simple highlight support in Emacs for the [Gren programming language](https://gren-lang.org/)
+Simple highlighting & tooling support for the [Gren programming language](https://gren-lang.org/)
 
 > Comes with `gren-format` to quickly format your code using the `gren format` command!
 
