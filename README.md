@@ -4,6 +4,8 @@ Simple highlight support in Emacs for the [Gren programming language](https://gr
 
 > Comes with `gren-format` to quickly format your code using the `gren format` command!
 
+![Screenshot of the Gren 'Counter' example using this packages gren-mode](gren-counter-example.png)
+
 ---
 
 ## TODO's
