@@ -19,6 +19,11 @@ M-x treesit-install-language-grammar gren
 
 After which, simply open up a gren file and get to coding!
 
+### To Manually run gren mode in Emacs run:
+```
+M-x gren-ts-mode
+```
+
 ## Notes
 
 - Current the gren formatter is a bit broken, if you run the gren format command and you get an error or nothing happens, it is because its ran into a parsing error.
