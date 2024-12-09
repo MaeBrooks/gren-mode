@@ -24,3 +24,8 @@ After which, simply open up a gren file and get to coding!
 - Current the gren formatter is a bit broken, if you run the gren format command and you get an error or nothing happens, it is because its ran into a parsing error.
 
 - The formatting used here is based on the tree-sitter grammar, and probably will not always indent code in a way the gren parser likes, if this happens, please file an issue
+
+
+## TODOS
+
+- [ ] [Add to melpa](https://github.com/melpa/melpa/blob/master/README.md)
