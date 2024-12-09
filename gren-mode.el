@@ -82,11 +82,6 @@
               (dot)
               (lower_case_identifier))
              @font-lock-builtin-face)
-          
-           :language 'gren
-           :feature 'function
-           :override 'keep
-           '((type_annotation) @font-lock-function-name-face)
 
            :language 'gren
            :feature 'variable
@@ -116,8 +111,7 @@
            '(
              ;; exposing (<value>)
              (exposed_value (lower_case_identifier))             @font-lock-function-name-face
-             ;; <main> =
-             (function_declaration_left (lower_case_identifier)) @font-lock-function-name-face
+             
              ;; (function_declaration_left (lower_case_identifier)) @font-lock-function-name-face
              ;; ((dot .) (lower_case_identifier)) @font-lock-function-name-face
              ;;   (value_expr (value_qid (lower_case_identifier))) @font-lock-function-name-face
@@ -199,31 +193,31 @@
              ;; Records
              ((node-is "record_expr") parent 4)
              ((parent-is "record_expr") parent 0)
+             ((parent-is "record_type") parent 0)
+             ((parent-is "field") parent 0)
+             ((parent-is "field_type") parent 0)
              ;; Type definition (type X)
              ((parent-is "type_expression") parent 4)
              ((node-is "union_variant") parent 4)
              ;; Function type def (foo : string)
              ((parent-is "type_declaration") parent 4)
+             ((parent-is "type_alias_declaration") parent 4)
              ;; Function Definition
              ((parent-is "value_declaration") parent 4)
              ((parent-is "function_declaration_left") parent 4)
              ;; When ... is
              ((parent-is "when_is_expr") parent 4)
              ((parent-is "when_is_branch") parent 4)
-             ((praent-is "pattern") parent 4)
+             ((parent-is "pattern") parent 4)
              ;; (
              ((parent-is "parenthesized_expr") parent 0)
              ((parent-is "list_expr") parent 0)
              ;; let ... in
-             ((node-is "value_declaration") parent 4)
              ((parent-is "let_in_expr") parent 0)
-             
+             ;; Comments
              ((node-is "comment") parent 0)
-             
-             ;; ((node-is "field") parent 0)
              ;; Default
-             ;; ((no-node) parent 0)
-             ))))
+             ((no-node) parent 0)))))
 
   (setup-font-lock)
   (setup-indentation))
