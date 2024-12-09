@@ -1,4 +1,4 @@
-# Unofficial Emacs Gren Package!
+# Unofficial Gren Emacs Package!
 
 Simple highlighting & tooling support for the [Gren programming language](https://gren-lang.org/) implemented in the Native Treesit package
 
