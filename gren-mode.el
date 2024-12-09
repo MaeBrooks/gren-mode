@@ -170,12 +170,13 @@
              "[" @font-lock-bracket-face
              "]" @font-lock-bracket-face
              "(" @font-lock-bracket-face
-             ")" @font-lock-bracket-face)
+             ")" @font-lock-bracket-face
+             "," @font-lock-bracket-face)
            
            :language 'gren
            :feature 'punctuation
            :override t
-           '("," @font-lock-punctuation-face
+           '(
              "." @font-lock-punctuation-face)
            
            :language 'gren
