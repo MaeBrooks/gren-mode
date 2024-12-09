@@ -4,7 +4,7 @@ Simple highlighting & tooling support for the [Gren programming language](https:
 
 > Comes with `M-x gren-format` to quickly format your code using the `gren format` command!
 
-![Screenshot of the Gren 'Counter' example using this packages gren-mode](gren-highlight-example.png)
+![Screenshot of the Gren 'Basic' example using this packages gren-ts-mode](gren-highlight-example.png)
 
 ---
 
