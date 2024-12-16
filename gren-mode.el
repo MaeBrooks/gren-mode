@@ -73,7 +73,6 @@
            :language 'gren
            :feature 'builtin
            :override 't
-           ;; builtin-face constant-face
            '((module_declaration (upper_case_qid (upper_case_identifier))) @font-lock-builtin-face
              (import_clause (upper_case_qid (upper_case_identifier)))      @font-lock-builtin-face
              (value_qid (upper_case_identifier))                           @font-lock-builtin-face
@@ -108,20 +107,12 @@
            :language 'gren
            :feature 'function
            :override t
-           '(
-             ;; exposing (<value>)
-             (exposed_value (lower_case_identifier))             @font-lock-function-name-face
-             
-             ;; (function_declaration_left (lower_case_identifier)) @font-lock-function-name-face
-             ;; ((dot .) (lower_case_identifier)) @font-lock-function-name-face
-             ;;   (value_expr (value_qid (lower_case_identifier))) @font-lock-function-name-face
-             )
+           '((exposed_value (lower_case_identifier))             @font-lock-function-name-face)
 
            :language 'gren
            :feature 'variable
            :override t
            '((lower_pattern (lower_case_identifier)) @font-lock-variable-name-face
-             ;; Foo <lower case>
              (type_variable (lower_case_identifier)) @font-lock-variable-name-face
              (lower_type_name (lower_case_identifier)) @font-lock-variable-name-face
              )
