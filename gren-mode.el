@@ -30,7 +30,7 @@
 
 (defcustom gren-tree-sitter-grammar-url "https://github.com/MaeBrooks/tree-sitter-gren"
   "The url to use to install the gren tree-sitter grammar the default is: https://github.com/MaeBrooks/tree-sitter-gren")
-(defcustom gren-tree-sitter-grammar-revision "when_is"
+(defcustom gren-tree-sitter-grammar-revision nil
   "The revision - the git tag or branch")
 
 (defun gren-format ()
